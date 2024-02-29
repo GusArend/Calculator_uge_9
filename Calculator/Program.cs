@@ -50,7 +50,13 @@
                     catch (FormatException)
                     {
                         Console.WriteLine("Enter only whole numbers.");
-                        
+
+                        Console.Write("Press enter to calculate again or X to quit ");
+                        quit = Console.ReadLine();
+                    }
+                    catch (DivideByZeroException)
+                    {
+                        Console.WriteLine("You cannot divide by 0.");
                         Console.Write("Press enter to calculate again or X to quit ");
                         quit = Console.ReadLine();
                     }

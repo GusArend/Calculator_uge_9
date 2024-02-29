@@ -16,6 +16,10 @@ namespace Lommeregner
 
         public double Divide(int x, int y)
         {
+            if (y == 0)
+            {
+                throw new DivideByZeroException();
+            }
             return (double)x / y;
             
         }
