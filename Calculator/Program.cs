@@ -42,7 +42,6 @@
                                 break;
                         }
 
-
                         Console.WriteLine($"{num1} {tegn} {num2} = {sum}");
 
                         Console.Write("Press enter to calculate again or X to quit ");
@@ -58,8 +57,9 @@
                 } else
                 {
                     Console.WriteLine("Only enter +, -, / or *");
+                    Console.Write("Press enter to continue");
+                    Console.ReadLine();
                 }
-
 
                 if (quit == "x") isCalculatorOn = false;
                 Console.Clear();
